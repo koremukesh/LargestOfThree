@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LargestOfThree {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-
+       int sum=0;
 		System.out.print("Enter the first number: ");
 		int num1 = input.nextInt();
 
@@ -23,7 +23,13 @@ public class LargestOfThree {
 			largest = num3;
 		}
 
-		int sum = largest;
-		System.out.println("The sum of the largest number is: " + sum);
+		int largestNumber = largest;
+		System.out.println("The largest of the three number is: " + largestNumber);
+		sum=num1+num2+num3;
+		System.out.println("Sum of the three number is: "+sum);
+		int average=0;
+		average=(num1+num2+num3)/3;
+		System.out.println("Average of the three numbers is: "+average);
+		
 	}
 }
